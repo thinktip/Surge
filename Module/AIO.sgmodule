@@ -1,5 +1,5 @@
-#!name=Script AIO
-#!desc=NoAD+VIP.
+#!name=AIO Script Module
+#!desc=Remove AD & enable some app VIP.
 #!system=ios
 [General]
 # > 优酷 去广告
