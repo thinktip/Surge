@@ -1,25 +1,3 @@
-#!name=Block Advertising
-#!desc=Block Advertising for Surge iOS
-#!system=ios
-
-[General]
-force-http-engine-hosts = %APPEND% *.ott.cibntv.net,123.59.31.1,119.18.193.135,122.14.246.33,175.102.178.52
-
-[Rule]
-URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TINYGIF
-
-[URL Rewrite]
-# 0~9
-# > 21st Century Business Herald - api.21jingji.com
-^https?:\/\/api\.21jingji\.com\/ad\/ - reject
-# > 4gTV - service.4gtv.tv
-^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/(GetAD|ADLog) - reject
-# > 58 - app.58.com,pic?.ajkimg.com
-^https?:\/\/app\.58\.com\/api\/home\/(advertising|appadv)\/ - reject
-^https?:\/\/app\.58\.com\/api\/home\/invite\/popupAdv - reject
-^https?:\/\/app\.58\.com\/api\/log\/ - reject
-^https?:\/\/pic\d\.ajkimg\.com\/mat\/\w+\?imageMogr\d\/format\/jpg\/thumbnail\/\d{3}x\d{4}$ - reject
-^https?:\/\/\w+\.58cdn\.com\.cn\/brandads\/ - reject
 
 # A
 # --- (Alibaba) ---
