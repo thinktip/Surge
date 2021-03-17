@@ -1,5 +1,5 @@
 #!name=Block Advertising
-#!desc=Block Advertising for Surge iOS
+#!desc=Block Advertising by URL Rewrite for Surge iOS 4, v1.1 Last Update 20210318
 #!system=ios
 
 [General]
@@ -143,6 +143,7 @@ URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start,REJECT-TI
 # > ChinaMobile - clientaccess.10086.cn
 ^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit - reject
 ^https?:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query - reject
+
 
 # > ChinaUnicom - m.client.10010.com
 ^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm - reject
