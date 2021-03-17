@@ -1,4 +1,4 @@
-#!name=Url Rewrite AD Block
+#!name=AD Block URL
 #!desc=Url Rewrite AD Block
 
 
@@ -795,17 +795,6 @@ http?:\/\/123.59.30.10\/adv\/advInfos - reject
 ^https?:\/\/wmedia-track.uc.cn - reject
 ^https?:\/\/www.ft.com\/__origami\/service\/image\/v2\/images\/raw\/https%3A%2F%2Fcreatives.ftimg.net%2Fads* - reject
 ^https?:\/\/www.lianbijr.com\/adPage\/ - reject
-
-
-[Script]
-# > WeChat
-http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=https://Choler.github.io/Surge/Script/WeChat.js
-
-# > Toutiao
-http-response ^https?://[\s\S]*\.snssdk\.com/api/news/feed/v88/ requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Toutiao.js
-
-# > QQ News
-http-response https://r\.inews\.qq.com\/get(QQNewsUnreadList|RecommendList) requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/QQNews.js
 
 [MITM]
 
