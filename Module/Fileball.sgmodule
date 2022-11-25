@@ -1,0 +1,9 @@
+#!name=Fileball VIP
+#!desc=Fileball VIP
+#!system=ios
+
+[Script]
+Fileball.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/fileball.js,type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com, app-measurement.com
