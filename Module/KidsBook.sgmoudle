@@ -3,7 +3,7 @@
 #!system=ios
 
 [Script]
-KidsBook = type=http-response,requires-body=1,max-size=0,pattern=^http[s]?:\/\/www.babybooks.top\/v0\/profile,script-path=https://raw.githubusercontent.com/thinktip/Surge/master/Module/KidsBook.js
+KidsBook = type=http-response,requires-body=1,max-size=0,pattern=^http[s]?:\/\/www.babybooks.top\/v0\/profile,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/hbetgs.js
 
 [MITM]
 hostname = www.babybooks.top
