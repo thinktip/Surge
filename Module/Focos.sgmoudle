@@ -1,0 +1,9 @@
+#!name=Focos VIP
+#!desc=Focos VIP
+#!system=ios
+
+[Script]
+Craft = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Focos.js
+
+[MITM]
+hostname = buy.itunes.apple.com
