@@ -1,0 +1,9 @@
+#!name=PDF Expert Premium
+#!desc=PDF Expert premium sub
+#!system=ios
+
+[Script]
+Craft = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/pdfexpert6\/subscription\/refresh,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFExpert.js
+
+[MITM]
+hostname = license.pdfexpert.com
