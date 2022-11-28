@@ -1,0 +1,9 @@
+#!name=SparkMail Premium
+#!desc=SparkMail Premium
+#!system=ios
+
+[Script]
+SparkMail = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(\w)*$),script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/SparkMail.js
+
+[MITM]
+hostname = api.revenuecat.com
