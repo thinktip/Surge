@@ -1,0 +1,9 @@
+#!name=Craft VIP
+#!desc=Craft VIP
+#!system=ios
+
+[Script]
+Craft = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/api\.craft\.do\/auth\/v2\/profile,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Craft.js
+
+[MITM]
+hostname = api.craft.do
